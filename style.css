@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Inter';
-  src: url(assets/font/Inter/Inter-VariableFont_opsz\,wght.ttf);
+  font-family: "Inter";
+  src: url(assets/font/Inter/Inter-VariableFont_opsz\wght.ttf);
 }
 
 :root {
@@ -18,10 +18,47 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   min-height: 100vh;
+  background: var(--color-bg-light);
   display: grid;
+  grid:
+    "sidebar header" 160px
+    "sidebar main" 1fr
+    / minmax(250px, 1fr) 4fr;
+}
+
+header,
+aside,
+article {
+  background: var(--color-bg-dark);
+}
+
+header,
+aside {
+  padding: 1rem;
+}
+
+header {
+  box-shadow: inset 4px 0 2px -2px rgba(0, 0, 0, 0.15);
+  grid-area: header;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  gap: 1rem;
+  padding: 2rem 1rem 3rem;
+}
+
+.projects {
+  grid-row: 1 / 3;
 }
