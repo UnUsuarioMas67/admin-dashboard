@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(assets/font/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+  --color-primary: #dc2626;
+  --color-secondary: #fbbf24;
+  --color-bg-light: #312e81;
+  --color-bg-dark: #1e1b4b;
+  --color-text-light: #eef2ff;
+  --color-text-darker: #818cf8;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+}
