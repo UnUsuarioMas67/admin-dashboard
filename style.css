@@ -65,6 +65,8 @@ header {
   grid-template: 1fr 2fr / 4fr 3fr;
   row-gap: 1rem;
   padding: 1rem 4rem 1rem 2.5rem;
+
+  box-shadow: 0 0 4px 4px rgba(161, 161, 170, 0.3);
 }
 
 /* Search section */
