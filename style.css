@@ -68,6 +68,28 @@ header {
 
 .search {
   grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar, .notifications {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  gap: 1rem;
+  margin-right: auto;
+}
+
+.notifications {
+  gap: 1.5rem;
+}
+
+.notifications .user {
+  display: flex;
+  align-items: center;
+  gap: inherit;
 }
 
 svg {
