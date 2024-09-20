@@ -6,8 +6,9 @@
 :root {
   --color-primary: #dc2626;
   --color-secondary: #fbbf24;
-  --color-bg-light: #312e81;
-  --color-bg-dark: #1e1b4b;
+  --color-bg-light: #fafafa;
+  --color-bg-dark: #e4e4e7;
+  --color-bg-sidebar: #172554;
   --color-text-light: #eef2ff;
   --color-text-darker: #818cf8;
 }
@@ -21,9 +22,10 @@
   font-family: "Inter", sans-serif;
 }
 
+/* BASIC LAYOUT */
 body {
   min-height: 100vh;
-  background: var(--color-bg-light);
+  background: var(--color-bg-dark);
   display: grid;
   grid:
     "sidebar header" 160px
@@ -32,9 +34,8 @@ body {
 }
 
 header,
-aside,
 article {
-  background: var(--color-bg-dark);
+  background: var(--color-bg-light);
 }
 
 header,
@@ -43,11 +44,11 @@ aside {
 }
 
 header {
-  box-shadow: inset 4px 0 2px -2px rgba(0, 0, 0, 0.15);
   grid-area: header;
 }
 
 aside {
+  background: var(--color-bg-sidebar);
   grid-area: sidebar;
 }
 
