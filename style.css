@@ -9,7 +9,7 @@
   --color-bg-light: #fafafa;
   --color-bg-dark: #e4e4e7;
   --color-bg-sidebar: #172554;
-  --color-text-darker: #71717a;
+  --color-text-lighter: rgba(0, 0, 0, 0.6);
   --color-card-btn: #1f2937;
   
   --container-box-shadow: 2px 2px 4px rgba(161, 161, 170, 0.3);
