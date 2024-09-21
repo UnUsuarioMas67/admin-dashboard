@@ -231,6 +231,8 @@ main {
   --gap: 1.5rem;
   gap: var(--gap);
   padding: 2rem 2.5rem 3rem 1rem;
+
+  max-width: 1400px;
 }
 
 h2 {
