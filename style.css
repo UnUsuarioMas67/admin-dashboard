@@ -227,7 +227,7 @@ nav ul {
 /* -------------- MAIN CONTENT -------------- */
 main {
   display: grid;
-  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template: auto auto / 3fr 1fr;
   --gap: 1.5rem;
   gap: var(--gap);
   padding: 2rem 2.5rem 3rem 1rem;
@@ -247,14 +247,14 @@ h3 {
   position: relative;
 }
 
-.overflow-hide::after {
-  /* Covers the bottom of the text with a box shadow */
+/* Covers the bottom of the text with a box shadow */
+/* .overflow-hide::after {
   content: "";
   position: absolute;
   inset: 0;
 
   box-shadow: inset 0 -15px 15px -5px var(--color-bg-light);
-}
+} */
 
 .card,
 .container {
@@ -314,7 +314,7 @@ h3 {
 
 .annoucement {
   display: grid;
-  grid-template-rows: 1fr 50px;
+  grid-template-rows: 1fr 36px;
   padding: 1rem 0.5rem;
 }
 
@@ -323,11 +323,11 @@ h3 {
 }
 
 .annoucement h3 {
-  font-size: 1rem;
+  font-size: 0.9375rem;
 }
 
 .annoucement p {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   color: var(--color-text-lighter);
 }
 
