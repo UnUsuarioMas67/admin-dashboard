@@ -160,6 +160,8 @@ header {
   font-weight: 600;
 
   min-width: 90px;
+
+  transition: background-color 0.2s;
 }
 
 button:hover {
