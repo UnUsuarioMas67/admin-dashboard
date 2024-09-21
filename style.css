@@ -5,12 +5,12 @@
 
 :root {
   --color-primary: #10b981;
+  --color-primary-hover: #059669;
   --color-secondary: #fbbf24;
-  --color-bg-light: #fafafa;
-  --color-bg-dark: #e4e4e7;
-  --color-bg-sidebar: #172554;
+  --color-bg-light: #f8fafc;
+  --color-bg-dark: #e2e8f0;
+  --color-bg-sidebar: #082f49;
   --color-text-lighter: rgba(0, 0, 0, 0.6);
-  --color-card-btn: #1f2937;
 
   --container-box-shadow: 2px 2px 4px rgba(161, 161, 170, 0.3);
 }
@@ -167,7 +167,7 @@ header {
 }
 
 button:hover {
-  background-color: #059669;
+  background-color: var(--color-primary-hover);
 }
 
 /* -------------- SIDEBAR -------------- */
