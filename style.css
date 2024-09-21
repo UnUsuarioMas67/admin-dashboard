@@ -273,7 +273,11 @@ h2 {
 }
 
 .card-buttons button svg {
-  fill: var(--color-card-btn);
+  fill: var(--color-text-lighter);
+}
+
+.card-buttons button:hover svg {
+  fill: black;
 }
 
 /* Other Stuff */
